@@ -9,9 +9,9 @@ dotenv.config({path:"config/config.env"});
 
 connectDatabase();
 
-
-app.listen(process.env.PORT,()=>{
-console.log(`Server is running on this Port: ${process.env.PORT}`)
+const PORT=process.env.PORT || 5500
+app.listen(,()=>{
+console.log(`Server is running on this Port: ${PORT}`)
 
 
 });
